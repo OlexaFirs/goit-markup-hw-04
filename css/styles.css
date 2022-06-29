@@ -11,6 +11,7 @@
     --font-family-primary: 'Roboto', sans-serif;
     --border-color: #ececec;
     --border-portfolio-color: #eeeeee;
+    --hero-background: #c4c4c4;
 }
 
 /* normalize */
@@ -151,7 +152,7 @@ body {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--secondary-background-color);
+    background-color: var(--hero-background);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(/images/header-img.jpg);
