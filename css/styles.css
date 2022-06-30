@@ -12,6 +12,7 @@
     --border-color: #ececec;
     --border-portfolio-color: #eeeeee;
     --hero-background: #c4c4c4;
+    --client-color: #afb1b8;
 }
 
 /* normalize */
@@ -99,8 +100,15 @@ body {
 .nav-li:hover,
 .nav-li:focus,
 .contacts-links:hover,
-.contacts-links:focus {
+.contacts-links:focus,
+.header-icon:hover,
+.header-icon:focus {
     color: var(--accent-color);
+}
+
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;;
 }
 
 .contacts-links {
@@ -265,6 +273,8 @@ body {
     display: block;
 }
 
+/* team */
+
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -301,6 +311,49 @@ body {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
 }
+
+
+/* clients */
+
+.clients-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-logo{
+    fill: var(--client-color);
+}
+
+.clients-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--client-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo{
+    fill: var(--accent-color);
+}
+
+.clients-link:hover .clients-border,
+.clients-link:focus .clients-border{
+    border-color: var(--accent-color);
+}
+
 
 /* Page portfolio */
 
@@ -390,6 +443,11 @@ body {
     background-color: var(--secondary-background-color);
 }
 
+.footer .container{
+    display: flex;
+    align-items: baseline;
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
@@ -401,7 +459,14 @@ body {
     line-height: 1.19;
 }
 
-.footer-adress {
+.footer-item{
+    min-width: 231px;
+    margin-right: 70px;
+
+
+}
+
+.footer-address {
     color: var(--primary-white-color);
     font-style: normal;
     line-height: 1.71;
@@ -412,11 +477,51 @@ body {
     color: var(--footer-contact-text);
 }
 
-.adress-item:nth-child(-n + 2) {
+.footer-links{
+    min-width: 206px;
+}
+
+.appeal{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.footer .cirkle-icon{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cirkle-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-icon{
+    fill: var(--primary-white-color);
+}
+
+.footer-net{
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-item:nth-child(-n + 2) {
     margin-bottom: 9px;
 }
 
 .footer-contacts:hover,
-.footer-contacts:focus {
+.footer-contacts:focus{
     color: var(--accent-color);
+}
+
+.cirkle-icon:hover,
+.cirkle-icon:focus{
+    background-color: var(--accent-color);
 }
