@@ -541,7 +541,10 @@ body {
 }
 
 .footer-contacts:hover,
-.footer-contacts:focus{
+.footer-contacts:focus,
+.address-map-link:hover,
+.address-map-link:focus
+{
     color: var(--accent-color);
 }
 
