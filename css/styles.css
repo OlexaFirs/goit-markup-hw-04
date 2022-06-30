@@ -15,14 +15,10 @@
 }
 
 /* normalize */
-html {
-    box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 h1,
@@ -108,10 +104,10 @@ body {
 }
 
 .contacts-links {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
