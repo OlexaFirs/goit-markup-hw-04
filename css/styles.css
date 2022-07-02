@@ -335,6 +335,7 @@ body {
 }
 
 /* clients */
+
 .clients-title{
     color: var(--title-text-color);
     font-weight: 700;
@@ -345,14 +346,15 @@ body {
     margin-bottom: 50px;
 }
 
+.clients-logo {
+    fill: var(--client-color);
+}
+
 .clients-list{
     display: flex;
     justify-content: space-between;
 }
 
-.clients-logo{
-    fill: var(--client-color);
-}
 
 .clients-item{
     width: 170px;
