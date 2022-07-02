@@ -354,24 +354,29 @@ body {
     fill: var(--client-color);
 }
 
-.clients-border{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.clients-item{
     width: 170px;
     height: 92px;
     border: 1px solid var(--client-color);
     border-radius: 4px;
 }
 
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clients-item:hover,
+.clients-item:focus  {
+    border-color: var(--accent-color);
+}
+
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo{
     fill: var(--accent-color);
-}
-
-.clients-link:hover .clients-border,
-.clients-link:focus .clients-border{
-    border-color: var(--accent-color);
 }
 
 /* Page portfolio */
